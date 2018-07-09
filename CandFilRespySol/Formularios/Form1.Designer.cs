@@ -215,6 +215,9 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
+            this.rESPUESTAYSOLUCIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirEjercicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compararRespuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -241,10 +244,11 @@
             this.mTablero,
             this.mColores,
             this.mContadores,
-            this.mIdiomas});
+            this.mIdiomas,
+            this.rESPUESTAYSOLUCIONToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(196, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(153, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(303, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -3580,6 +3584,27 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
+            // rESPUESTAYSOLUCIONToolStripMenuItem
+            // 
+            this.rESPUESTAYSOLUCIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirEjercicioToolStripMenuItem,
+            this.compararRespuestaToolStripMenuItem});
+            this.rESPUESTAYSOLUCIONToolStripMenuItem.Name = "rESPUESTAYSOLUCIONToolStripMenuItem";
+            this.rESPUESTAYSOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
+            this.rESPUESTAYSOLUCIONToolStripMenuItem.Text = "RESPUESTA Y SOLUCION";
+            // 
+            // abrirEjercicioToolStripMenuItem
+            // 
+            this.abrirEjercicioToolStripMenuItem.Name = "abrirEjercicioToolStripMenuItem";
+            this.abrirEjercicioToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.abrirEjercicioToolStripMenuItem.Text = "Abrir Ejercicio";
+            // 
+            // compararRespuestaToolStripMenuItem
+            // 
+            this.compararRespuestaToolStripMenuItem.Name = "compararRespuestaToolStripMenuItem";
+            this.compararRespuestaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.compararRespuestaToolStripMenuItem.Text = "Comparar Respuesta";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3796,6 +3821,9 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
+        private System.Windows.Forms.ToolStripMenuItem rESPUESTAYSOLUCIONToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirEjercicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem compararRespuestaToolStripMenuItem;
     }
 }
 
