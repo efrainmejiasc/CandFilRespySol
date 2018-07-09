@@ -8,3 +8,13 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.pdb
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.Form1.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.RecursosLocalizables.StringResources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.RecursosLocalizables.StringResources.EN-US.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.RecursosLocalizables.StringResources.ES-VE.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\bin\Debug\PT-PT\CandFilRespySol.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\bin\Debug\EN-US\CandFilRespySol.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\bin\Debug\ES-VE\CandFilRespySol.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.RecursosLocalizables.StringResorces.PT-PT.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\PT-PT\CandFilRespySol.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\EN-US\CandFilRespySol.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\ES-VE\CandFilRespySol.resources.dll

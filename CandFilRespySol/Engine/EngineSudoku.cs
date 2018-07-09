@@ -1,14 +1,17 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CandFilRespySol.Engine
 {
     class EngineSudoku
     {
+        private int[] pos = new int[2];
 
         private RegistryKey key = Registry.CurrentUser;
 
@@ -88,6 +91,53 @@ namespace CandFilRespySol.Engine
                 registryKeyShell.SetValue(string.Empty, $"\"{executableFileName}\" \"%1\"");
                 registryKeyShell.Close();
             }
+        }
+
+        public TextBox[,] SetearTextColorInicio(TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public int[] Position(string sentido, int f, int c)
+        {
+            switch (sentido)
+            {
+                case "Up":
+                    pos[0] = f - 1; pos[1] = c;
+                    break;
+                case "Down":
+                    pos[0] = f + 1; pos[1] = c;
+                    break;
+                case "Right":
+                    pos[0] = f; pos[1] = c + 1;
+                    break;
+                case "Left":
+                    pos[0] = f; pos[1] = c - 1;
+                    break;
+            }
+            return pos;
+        }
+
+        public Button[] ColoresPincel(Button[] v)
+        {
+            v[0].BackColor = Color.Silver;
+            v[1].BackColor = Color.SkyBlue;
+            v[2].BackColor = Color.CornflowerBlue;
+            v[3].BackColor = Color.LightCoral;
+            v[4].BackColor = Color.Crimson;
+
+            v[5].BackColor = Color.PaleGreen;
+            v[6].BackColor = Color.YellowGreen;
+            v[7].BackColor = Color.LightSalmon;
+            v[8].BackColor = Color.Orange;
+            return v;
         }
     }
 }

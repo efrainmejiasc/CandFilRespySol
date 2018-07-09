@@ -30,6 +30,7 @@ namespace CandFilEjerySol
         int col = -1;
         string pathArchivo = string.Empty;
         string numActivo = "0";
+        bool borrado = false;
 
 
         public Form1()
@@ -220,6 +221,7 @@ namespace CandFilEjerySol
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
             txt.BackColor = Color.WhiteSmoke;
+            borrado = true;
         }
 
         private void txt00_Leave(object sender, EventArgs e)
@@ -233,10 +235,15 @@ namespace CandFilEjerySol
             }
             else
             {
-                if (txt.Text ==string.Empty)
+                if (txt.Text == string.Empty || borrado == true)
+                {
                     txt.BackColor = Color.WhiteSmoke;
-                else
-                    txt.BackColor = colorFondoAct; 
+                    borrado = false;
+                }
+                else if (txt.Text != string.Empty && borrado == false)
+                {
+                    txt.BackColor = colorFondoAct;
+                }
             }
         }
 

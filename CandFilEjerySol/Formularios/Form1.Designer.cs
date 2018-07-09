@@ -126,8 +126,8 @@
             this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.crearOtroJuegoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pnl1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -350,6 +350,7 @@
             // txt88
             // 
             this.txt88.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt88.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt88.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt88.ForeColor = System.Drawing.Color.Blue;
             this.txt88.Location = new System.Drawing.Point(487, 387);
@@ -367,6 +368,7 @@
             // txt85
             // 
             this.txt85.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt85.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt85.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt85.ForeColor = System.Drawing.Color.Blue;
             this.txt85.Location = new System.Drawing.Point(306, 388);
@@ -384,6 +386,7 @@
             // txt87
             // 
             this.txt87.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt87.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt87.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt87.ForeColor = System.Drawing.Color.Blue;
             this.txt87.Location = new System.Drawing.Point(428, 387);
@@ -401,6 +404,7 @@
             // txt84
             // 
             this.txt84.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt84.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt84.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt84.ForeColor = System.Drawing.Color.Blue;
             this.txt84.Location = new System.Drawing.Point(247, 388);
@@ -418,6 +422,7 @@
             // txt86
             // 
             this.txt86.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt86.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt86.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt86.ForeColor = System.Drawing.Color.Blue;
             this.txt86.Location = new System.Drawing.Point(369, 387);
@@ -435,6 +440,7 @@
             // txt83
             // 
             this.txt83.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt83.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt83.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt83.ForeColor = System.Drawing.Color.Blue;
             this.txt83.Location = new System.Drawing.Point(188, 388);
@@ -452,6 +458,7 @@
             // txt78
             // 
             this.txt78.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt78.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt78.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt78.ForeColor = System.Drawing.Color.Blue;
             this.txt78.Location = new System.Drawing.Point(487, 341);
@@ -469,6 +476,7 @@
             // txt75
             // 
             this.txt75.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt75.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt75.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt75.ForeColor = System.Drawing.Color.Blue;
             this.txt75.Location = new System.Drawing.Point(306, 342);
@@ -486,6 +494,7 @@
             // txt77
             // 
             this.txt77.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt77.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt77.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt77.ForeColor = System.Drawing.Color.Blue;
             this.txt77.Location = new System.Drawing.Point(428, 341);
@@ -503,6 +512,7 @@
             // txt74
             // 
             this.txt74.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt74.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt74.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt74.ForeColor = System.Drawing.Color.Blue;
             this.txt74.Location = new System.Drawing.Point(247, 342);
@@ -520,6 +530,7 @@
             // txt76
             // 
             this.txt76.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt76.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt76.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt76.ForeColor = System.Drawing.Color.Blue;
             this.txt76.Location = new System.Drawing.Point(369, 341);
@@ -537,6 +548,7 @@
             // txt73
             // 
             this.txt73.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt73.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt73.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt73.ForeColor = System.Drawing.Color.Blue;
             this.txt73.Location = new System.Drawing.Point(188, 342);
@@ -554,6 +566,7 @@
             // txt68
             // 
             this.txt68.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt68.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt68.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt68.ForeColor = System.Drawing.Color.Blue;
             this.txt68.Location = new System.Drawing.Point(487, 295);
@@ -571,6 +584,7 @@
             // txt65
             // 
             this.txt65.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt65.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt65.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt65.ForeColor = System.Drawing.Color.Blue;
             this.txt65.Location = new System.Drawing.Point(306, 296);
@@ -588,6 +602,7 @@
             // txt67
             // 
             this.txt67.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt67.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt67.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt67.ForeColor = System.Drawing.Color.Blue;
             this.txt67.Location = new System.Drawing.Point(428, 295);
@@ -605,6 +620,7 @@
             // txt64
             // 
             this.txt64.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt64.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt64.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt64.ForeColor = System.Drawing.Color.Blue;
             this.txt64.Location = new System.Drawing.Point(247, 296);
@@ -622,6 +638,7 @@
             // txt66
             // 
             this.txt66.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt66.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt66.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt66.ForeColor = System.Drawing.Color.Blue;
             this.txt66.Location = new System.Drawing.Point(369, 295);
@@ -639,6 +656,7 @@
             // txt63
             // 
             this.txt63.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt63.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt63.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt63.ForeColor = System.Drawing.Color.Blue;
             this.txt63.Location = new System.Drawing.Point(188, 296);
@@ -656,6 +674,7 @@
             // txt82
             // 
             this.txt82.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt82.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt82.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt82.ForeColor = System.Drawing.Color.Blue;
             this.txt82.Location = new System.Drawing.Point(125, 388);
@@ -673,6 +692,7 @@
             // txt81
             // 
             this.txt81.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt81.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt81.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt81.ForeColor = System.Drawing.Color.Blue;
             this.txt81.Location = new System.Drawing.Point(66, 388);
@@ -690,6 +710,7 @@
             // txt80
             // 
             this.txt80.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt80.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt80.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt80.ForeColor = System.Drawing.Color.Blue;
             this.txt80.Location = new System.Drawing.Point(7, 388);
@@ -707,6 +728,7 @@
             // txt72
             // 
             this.txt72.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt72.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt72.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt72.ForeColor = System.Drawing.Color.Blue;
             this.txt72.Location = new System.Drawing.Point(125, 342);
@@ -724,6 +746,7 @@
             // txt71
             // 
             this.txt71.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt71.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt71.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt71.ForeColor = System.Drawing.Color.Blue;
             this.txt71.Location = new System.Drawing.Point(66, 342);
@@ -741,6 +764,7 @@
             // txt70
             // 
             this.txt70.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt70.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt70.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt70.ForeColor = System.Drawing.Color.Blue;
             this.txt70.Location = new System.Drawing.Point(7, 342);
@@ -758,6 +782,7 @@
             // txt62
             // 
             this.txt62.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt62.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt62.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt62.ForeColor = System.Drawing.Color.Blue;
             this.txt62.Location = new System.Drawing.Point(125, 296);
@@ -775,6 +800,7 @@
             // txt61
             // 
             this.txt61.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt61.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt61.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt61.ForeColor = System.Drawing.Color.Blue;
             this.txt61.Location = new System.Drawing.Point(66, 296);
@@ -792,6 +818,7 @@
             // txt60
             // 
             this.txt60.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt60.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt60.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt60.ForeColor = System.Drawing.Color.Blue;
             this.txt60.Location = new System.Drawing.Point(7, 296);
@@ -809,6 +836,7 @@
             // txt58
             // 
             this.txt58.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt58.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt58.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt58.ForeColor = System.Drawing.Color.Blue;
             this.txt58.Location = new System.Drawing.Point(487, 244);
@@ -826,6 +854,7 @@
             // txt57
             // 
             this.txt57.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt57.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt57.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt57.ForeColor = System.Drawing.Color.Blue;
             this.txt57.Location = new System.Drawing.Point(428, 244);
@@ -843,6 +872,7 @@
             // txt56
             // 
             this.txt56.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt56.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt56.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt56.ForeColor = System.Drawing.Color.Blue;
             this.txt56.Location = new System.Drawing.Point(369, 244);
@@ -860,6 +890,7 @@
             // txt48
             // 
             this.txt48.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt48.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt48.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt48.ForeColor = System.Drawing.Color.Blue;
             this.txt48.Location = new System.Drawing.Point(487, 198);
@@ -877,6 +908,7 @@
             // txt47
             // 
             this.txt47.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt47.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt47.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt47.ForeColor = System.Drawing.Color.Blue;
             this.txt47.Location = new System.Drawing.Point(428, 198);
@@ -894,6 +926,7 @@
             // txt46
             // 
             this.txt46.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt46.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt46.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt46.ForeColor = System.Drawing.Color.Blue;
             this.txt46.Location = new System.Drawing.Point(369, 198);
@@ -911,6 +944,7 @@
             // txt38
             // 
             this.txt38.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt38.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt38.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt38.ForeColor = System.Drawing.Color.Blue;
             this.txt38.Location = new System.Drawing.Point(487, 152);
@@ -928,6 +962,7 @@
             // txt37
             // 
             this.txt37.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt37.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt37.ForeColor = System.Drawing.Color.Blue;
             this.txt37.Location = new System.Drawing.Point(428, 152);
@@ -945,6 +980,7 @@
             // txt36
             // 
             this.txt36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt36.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt36.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt36.ForeColor = System.Drawing.Color.Blue;
             this.txt36.Location = new System.Drawing.Point(369, 152);
@@ -962,6 +998,7 @@
             // txt55
             // 
             this.txt55.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt55.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt55.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt55.ForeColor = System.Drawing.Color.Blue;
             this.txt55.Location = new System.Drawing.Point(306, 244);
@@ -979,6 +1016,7 @@
             // txt54
             // 
             this.txt54.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt54.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt54.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt54.ForeColor = System.Drawing.Color.Blue;
             this.txt54.Location = new System.Drawing.Point(247, 244);
@@ -996,6 +1034,7 @@
             // txt53
             // 
             this.txt53.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt53.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt53.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt53.ForeColor = System.Drawing.Color.Blue;
             this.txt53.Location = new System.Drawing.Point(188, 244);
@@ -1013,6 +1052,7 @@
             // txt45
             // 
             this.txt45.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt45.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt45.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt45.ForeColor = System.Drawing.Color.Blue;
             this.txt45.Location = new System.Drawing.Point(306, 198);
@@ -1030,6 +1070,7 @@
             // txt44
             // 
             this.txt44.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt44.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt44.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt44.ForeColor = System.Drawing.Color.Blue;
             this.txt44.Location = new System.Drawing.Point(247, 198);
@@ -1047,6 +1088,7 @@
             // txt43
             // 
             this.txt43.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt43.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt43.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt43.ForeColor = System.Drawing.Color.Blue;
             this.txt43.Location = new System.Drawing.Point(188, 198);
@@ -1064,6 +1106,7 @@
             // txt35
             // 
             this.txt35.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt35.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt35.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt35.ForeColor = System.Drawing.Color.Blue;
             this.txt35.Location = new System.Drawing.Point(306, 152);
@@ -1081,6 +1124,7 @@
             // txt34
             // 
             this.txt34.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt34.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt34.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt34.ForeColor = System.Drawing.Color.Blue;
             this.txt34.Location = new System.Drawing.Point(247, 152);
@@ -1098,6 +1142,7 @@
             // txt33
             // 
             this.txt33.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt33.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt33.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt33.ForeColor = System.Drawing.Color.Blue;
             this.txt33.Location = new System.Drawing.Point(188, 152);
@@ -1115,6 +1160,7 @@
             // txt52
             // 
             this.txt52.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt52.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt52.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt52.ForeColor = System.Drawing.Color.Blue;
             this.txt52.Location = new System.Drawing.Point(125, 244);
@@ -1132,6 +1178,7 @@
             // txt51
             // 
             this.txt51.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt51.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt51.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt51.ForeColor = System.Drawing.Color.Blue;
             this.txt51.Location = new System.Drawing.Point(66, 244);
@@ -1149,6 +1196,7 @@
             // txt28
             // 
             this.txt28.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt28.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt28.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt28.ForeColor = System.Drawing.Color.Blue;
             this.txt28.Location = new System.Drawing.Point(487, 100);
@@ -1166,6 +1214,7 @@
             // txt06
             // 
             this.txt06.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt06.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt06.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt06.ForeColor = System.Drawing.Color.Blue;
             this.txt06.Location = new System.Drawing.Point(369, 8);
@@ -1183,6 +1232,7 @@
             // txt50
             // 
             this.txt50.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt50.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt50.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt50.ForeColor = System.Drawing.Color.Blue;
             this.txt50.Location = new System.Drawing.Point(7, 244);
@@ -1200,6 +1250,7 @@
             // txt27
             // 
             this.txt27.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt27.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt27.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt27.ForeColor = System.Drawing.Color.Blue;
             this.txt27.Location = new System.Drawing.Point(428, 100);
@@ -1217,6 +1268,7 @@
             // txt42
             // 
             this.txt42.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt42.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt42.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt42.ForeColor = System.Drawing.Color.Blue;
             this.txt42.Location = new System.Drawing.Point(125, 198);
@@ -1234,6 +1286,7 @@
             // txt18
             // 
             this.txt18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt18.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt18.ForeColor = System.Drawing.Color.Blue;
             this.txt18.Location = new System.Drawing.Point(487, 54);
@@ -1251,6 +1304,7 @@
             // txt41
             // 
             this.txt41.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt41.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt41.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt41.ForeColor = System.Drawing.Color.Blue;
             this.txt41.Location = new System.Drawing.Point(66, 198);
@@ -1268,6 +1322,7 @@
             // txt07
             // 
             this.txt07.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt07.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt07.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt07.ForeColor = System.Drawing.Color.Blue;
             this.txt07.Location = new System.Drawing.Point(428, 8);
@@ -1285,6 +1340,7 @@
             // txt40
             // 
             this.txt40.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt40.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt40.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt40.ForeColor = System.Drawing.Color.Blue;
             this.txt40.Location = new System.Drawing.Point(7, 198);
@@ -1302,6 +1358,7 @@
             // txt17
             // 
             this.txt17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt17.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt17.ForeColor = System.Drawing.Color.Blue;
             this.txt17.Location = new System.Drawing.Point(428, 54);
@@ -1319,6 +1376,7 @@
             // txt32
             // 
             this.txt32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt32.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt32.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt32.ForeColor = System.Drawing.Color.Blue;
             this.txt32.Location = new System.Drawing.Point(125, 152);
@@ -1336,6 +1394,7 @@
             // txt16
             // 
             this.txt16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt16.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt16.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt16.ForeColor = System.Drawing.Color.Blue;
             this.txt16.Location = new System.Drawing.Point(369, 54);
@@ -1353,6 +1412,7 @@
             // txt31
             // 
             this.txt31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt31.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt31.ForeColor = System.Drawing.Color.Blue;
             this.txt31.Location = new System.Drawing.Point(66, 152);
@@ -1370,6 +1430,7 @@
             // txt08
             // 
             this.txt08.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt08.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt08.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt08.ForeColor = System.Drawing.Color.Blue;
             this.txt08.Location = new System.Drawing.Point(487, 8);
@@ -1387,6 +1448,7 @@
             // txt26
             // 
             this.txt26.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt26.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt26.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt26.ForeColor = System.Drawing.Color.Blue;
             this.txt26.Location = new System.Drawing.Point(369, 100);
@@ -1404,6 +1466,7 @@
             // txt30
             // 
             this.txt30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt30.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt30.ForeColor = System.Drawing.Color.Blue;
             this.txt30.Location = new System.Drawing.Point(7, 152);
@@ -1421,6 +1484,7 @@
             // txt25
             // 
             this.txt25.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt25.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt25.ForeColor = System.Drawing.Color.Blue;
             this.txt25.Location = new System.Drawing.Point(306, 100);
@@ -1438,6 +1502,7 @@
             // txt24
             // 
             this.txt24.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt24.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt24.ForeColor = System.Drawing.Color.Blue;
             this.txt24.Location = new System.Drawing.Point(247, 100);
@@ -1455,6 +1520,7 @@
             // txt23
             // 
             this.txt23.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt23.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt23.ForeColor = System.Drawing.Color.Blue;
             this.txt23.Location = new System.Drawing.Point(188, 100);
@@ -1472,6 +1538,7 @@
             // txt15
             // 
             this.txt15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt15.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt15.ForeColor = System.Drawing.Color.Blue;
             this.txt15.Location = new System.Drawing.Point(306, 54);
@@ -1489,6 +1556,7 @@
             // txt14
             // 
             this.txt14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt14.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt14.ForeColor = System.Drawing.Color.Blue;
             this.txt14.Location = new System.Drawing.Point(247, 54);
@@ -1506,6 +1574,7 @@
             // txt13
             // 
             this.txt13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt13.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt13.ForeColor = System.Drawing.Color.Blue;
             this.txt13.Location = new System.Drawing.Point(188, 54);
@@ -1523,6 +1592,7 @@
             // txt05
             // 
             this.txt05.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt05.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt05.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt05.ForeColor = System.Drawing.Color.Blue;
             this.txt05.Location = new System.Drawing.Point(306, 8);
@@ -1540,6 +1610,7 @@
             // txt04
             // 
             this.txt04.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt04.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt04.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt04.ForeColor = System.Drawing.Color.Blue;
             this.txt04.Location = new System.Drawing.Point(247, 8);
@@ -1557,6 +1628,7 @@
             // txt03
             // 
             this.txt03.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt03.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt03.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt03.ForeColor = System.Drawing.Color.Blue;
             this.txt03.Location = new System.Drawing.Point(188, 8);
@@ -1574,6 +1646,7 @@
             // txt22
             // 
             this.txt22.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt22.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt22.ForeColor = System.Drawing.Color.Blue;
             this.txt22.Location = new System.Drawing.Point(125, 100);
@@ -1591,6 +1664,7 @@
             // txt21
             // 
             this.txt21.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt21.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt21.ForeColor = System.Drawing.Color.Blue;
             this.txt21.Location = new System.Drawing.Point(66, 100);
@@ -1608,6 +1682,7 @@
             // txt20
             // 
             this.txt20.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt20.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt20.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt20.ForeColor = System.Drawing.Color.Blue;
             this.txt20.Location = new System.Drawing.Point(7, 100);
@@ -1625,6 +1700,7 @@
             // txt12
             // 
             this.txt12.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt12.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt12.ForeColor = System.Drawing.Color.Blue;
             this.txt12.Location = new System.Drawing.Point(125, 54);
@@ -1642,6 +1718,7 @@
             // txt11
             // 
             this.txt11.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt11.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt11.ForeColor = System.Drawing.Color.Blue;
             this.txt11.Location = new System.Drawing.Point(66, 54);
@@ -1659,6 +1736,7 @@
             // txt10
             // 
             this.txt10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt10.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt10.ForeColor = System.Drawing.Color.Blue;
             this.txt10.Location = new System.Drawing.Point(7, 54);
@@ -1676,6 +1754,7 @@
             // txt02
             // 
             this.txt02.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt02.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt02.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt02.ForeColor = System.Drawing.Color.Blue;
             this.txt02.Location = new System.Drawing.Point(125, 8);
@@ -1693,6 +1772,7 @@
             // txt01
             // 
             this.txt01.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt01.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt01.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt01.ForeColor = System.Drawing.Color.Blue;
             this.txt01.Location = new System.Drawing.Point(66, 8);
@@ -1710,6 +1790,7 @@
             // txt00
             // 
             this.txt00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt00.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txt00.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt00.ForeColor = System.Drawing.Color.Blue;
             this.txt00.Location = new System.Drawing.Point(7, 8);
