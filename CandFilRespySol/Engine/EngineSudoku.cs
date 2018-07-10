@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace CandFilRespySol.Engine
     class EngineSudoku
     {
         private int[] pos = new int[2];
+        private EngineData Valor = EngineData.Instance();
 
         private RegistryKey key = Registry.CurrentUser;
 
@@ -139,5 +141,175 @@ namespace CandFilRespySol.Engine
             v[8].BackColor = Color.Orange;
             return v;
         }
+
+        public TextBox[,] SetearTextBoxLimpio(TextBox[,] cajaTexto)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    cajaTexto[f, c].Text = string.Empty;
+                    cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public ArrayList AbrirValoresArchivo(string pathArchivo)
+        {
+            ArrayList arrText = new ArrayList();
+            String sLine = string.Empty;
+            try
+            {
+                System.IO.StreamReader objReader = new System.IO.StreamReader(pathArchivo);
+                while (sLine != null)
+                {
+                    sLine = objReader.ReadLine();
+                    if (sLine != null) arrText.Add(sLine);
+                }
+                objReader.Close();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+
+            return arrText;
+        }
+
+        public string[,] SetValorNumeros(ArrayList arrText, string[,] valorNumeros)
+        {
+            valorNumeros = new string[9, 9];
+            for (int f = 0; f <= 8; f++)
+            {
+                string[] lineaVector = arrText[f].ToString().Split('-');
+
+                if (f >= 0 && f <= 8)
+                {
+                    if (lineaVector.Length != 9) return valorNumeros;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != "0")
+                        {
+                            valorNumeros[f, columna] = lineaVector[columna];
+                        }
+                    }
+                }
+
+            }
+            return valorNumeros;
+        }
+
+        public string[,] SetValorSolucion(ArrayList arrText, string[,] valorSolucion)
+        {
+            valorSolucion= new string[9, 9];
+            for (int f = 0; f <= 17; f++)
+            {
+                string[] lineaVector = arrText[f].ToString().Split('-');
+
+                if (f >= 9 && f <= 17)
+                {
+                    if (lineaVector.Length != 9) return valorSolucion;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != "0")
+                        {
+                            valorSolucion[f - 9, columna] = lineaVector[columna];
+                        }
+                    }
+                }
+
+            }
+            return valorSolucion;
+        }
+
+        public string[,] SetValorRespuesta(ArrayList arrText, string[,] valorRespuesta)
+        {
+            valorRespuesta = new string[9, 9];
+            int fila = 0;
+            for (int f = 0; f <= 26; f++)
+            {
+                if (f >= 18 && f <= 26)
+                {
+                    string[] lineaVector = arrText[f].ToString().Split('-');
+                    if (lineaVector.Length != 9) return valorRespuesta;
+                    for (int columna = 0; columna <= 8; columna++)
+                    {
+                        if (lineaVector[columna] != "0")
+                        {
+                            valorRespuesta[fila, columna] = lineaVector[columna];
+                        }
+                    }
+                    fila++;
+                }
+            }
+            return valorRespuesta;
+        }
+
+        public TextBox[,] SetearTextBoxJuego(TextBox[,] cajaTexto, string[,] vIngresado)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
+                    {
+                        cajaTexto[f, c].Text = vIngresado[f, c];
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                        cajaTexto[f, c].ForeColor = Color.Blue;
+
+                    }
+                    cajaTexto[f, c].TextAlign = HorizontalAlignment.Center;
+                }
+            }
+            return cajaTexto;
+        }
+
+        public TextBox [,] SetearTextColor (TextBox [,] cajaTexto , string[,] vColor)
+        {
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (vColor[f, c] == "1")
+                    {
+                        cajaTexto[f, c].BackColor = Color.SkyBlue;
+                    }
+                    else if (vColor[f, c] == "2")
+                    {
+                        cajaTexto[f, c].BackColor = Color.CornflowerBlue;
+                    }
+                    else if (vColor[f, c] == "3")
+                    {
+                        cajaTexto[f, c].BackColor = Color.LightCoral;
+                    }
+                    else if (vColor[f, c] == "4")
+                    {
+                        cajaTexto[f, c].BackColor = Color.Crimson;
+                    }
+                    else if (vColor[f, c] == "5")
+                    {
+                        cajaTexto[f, c].BackColor = Color.PaleGreen;
+                    }
+                    else if (vColor[f, c] == "6")
+                    {
+                        cajaTexto[f, c].BackColor = Color.YellowGreen;
+                    }
+                    else if (vColor[f, c] == "7")
+                    {
+                        cajaTexto[f, c].BackColor = Color.LightSalmon;
+                    }
+                    else if (vColor[f, c] == "8")
+                    {
+                        cajaTexto[f, c].BackColor = Color.Orange;
+                    }
+                    else
+                    {
+                        cajaTexto[f, c].BackColor = Color.WhiteSmoke;
+                    }
+                }
+            }
+
+            return cajaTexto;
+        }
+
+
     }
 }

@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mRS = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.mIComparar = new System.Windows.Forms.ToolStripMenuItem();
             this.mArchivo = new System.Windows.Forms.ToolStripMenuItem();
             this.mTablero = new System.Windows.Forms.ToolStripMenuItem();
             this.mColores = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,6 +43,8 @@
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
@@ -49,8 +55,6 @@
             this.pincelC = new System.Windows.Forms.Button();
             this.pincelB = new System.Windows.Forms.Button();
             this.pincelA = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt88 = new System.Windows.Forms.TextBox();
             this.txt85 = new System.Windows.Forms.TextBox();
@@ -215,9 +219,7 @@
             this.t02 = new System.Windows.Forms.TextBox();
             this.t01 = new System.Windows.Forms.TextBox();
             this.t00 = new System.Windows.Forms.TextBox();
-            this.rESPUESTAYSOLUCIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirEjercicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.compararRespuestaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnl1.SuspendLayout();
@@ -240,17 +242,39 @@
             this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mRS,
             this.mArchivo,
             this.mTablero,
             this.mColores,
             this.mContadores,
-            this.mIdiomas,
-            this.rESPUESTAYSOLUCIONToolStripMenuItem});
+            this.mIdiomas});
             this.menuStrip1.Location = new System.Drawing.Point(196, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(303, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
             this.menuStrip1.TabIndex = 58;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mRS
+            // 
+            this.mRS.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mIAbrir,
+            this.mIComparar});
+            this.mRS.Name = "mRS";
+            this.mRS.Size = new System.Drawing.Size(150, 20);
+            this.mRS.Text = "RESPUESTA Y SOLUCION";
+            // 
+            // mIAbrir
+            // 
+            this.mIAbrir.Name = "mIAbrir";
+            this.mIAbrir.Size = new System.Drawing.Size(183, 22);
+            this.mIAbrir.Text = "Abrir Ejercicio";
+            this.mIAbrir.Click += new System.EventHandler(this.abrirEjercicioToolStripMenuItem_Click);
+            // 
+            // mIComparar
+            // 
+            this.mIComparar.Name = "mIComparar";
+            this.mIComparar.Size = new System.Drawing.Size(183, 22);
+            this.mIComparar.Text = "Comparar Respuesta";
             // 
             // mArchivo
             // 
@@ -293,21 +317,21 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(152, 22);
+            this.mIIngles.Size = new System.Drawing.Size(128, 22);
             this.mIIngles.Text = "English";
             this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
             this.mIEspañol.Text = "Español";
             this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
             this.mIPortugues.Text = "Português";
             this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
@@ -329,6 +353,24 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(1145, 143);
             this.pnl1.TabIndex = 61;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(825, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 118;
+            this.label2.Text = "SOLUCION";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(248, 63);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 117;
+            this.label1.Text = "RESPUESTA";
             // 
             // btnSelectColor
             // 
@@ -469,24 +511,6 @@
             this.pincelA.Text = "R";
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
-            this.label1.TabIndex = 117;
-            this.label1.Text = "RESPUESTA";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(825, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 118;
-            this.label2.Text = "SOLUCION";
             // 
             // panel1
             // 
@@ -3584,26 +3608,9 @@
             this.t00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.t00_KeyUp);
             this.t00.Leave += new System.EventHandler(this.t00_Leave);
             // 
-            // rESPUESTAYSOLUCIONToolStripMenuItem
+            // openFileDialog1
             // 
-            this.rESPUESTAYSOLUCIONToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abrirEjercicioToolStripMenuItem,
-            this.compararRespuestaToolStripMenuItem});
-            this.rESPUESTAYSOLUCIONToolStripMenuItem.Name = "rESPUESTAYSOLUCIONToolStripMenuItem";
-            this.rESPUESTAYSOLUCIONToolStripMenuItem.Size = new System.Drawing.Size(150, 20);
-            this.rESPUESTAYSOLUCIONToolStripMenuItem.Text = "RESPUESTA Y SOLUCION";
-            // 
-            // abrirEjercicioToolStripMenuItem
-            // 
-            this.abrirEjercicioToolStripMenuItem.Name = "abrirEjercicioToolStripMenuItem";
-            this.abrirEjercicioToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.abrirEjercicioToolStripMenuItem.Text = "Abrir Ejercicio";
-            // 
-            // compararRespuestaToolStripMenuItem
-            // 
-            this.compararRespuestaToolStripMenuItem.Name = "compararRespuestaToolStripMenuItem";
-            this.compararRespuestaToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.compararRespuestaToolStripMenuItem.Text = "Comparar Respuesta";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -3614,6 +3621,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.panel11);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -3821,9 +3829,10 @@
         private System.Windows.Forms.TextBox t02;
         private System.Windows.Forms.TextBox t01;
         private System.Windows.Forms.TextBox t00;
-        private System.Windows.Forms.ToolStripMenuItem rESPUESTAYSOLUCIONToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem abrirEjercicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem compararRespuestaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mRS;
+        private System.Windows.Forms.ToolStripMenuItem mIAbrir;
+        private System.Windows.Forms.ToolStripMenuItem mIComparar;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

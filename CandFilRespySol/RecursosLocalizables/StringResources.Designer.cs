@@ -61,6 +61,42 @@ namespace CandFilRespySol.RecursosLocalizables {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Answer.
+        /// </summary>
+        internal static string label1 {
+            get {
+                return ResourceManager.GetString("label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Solution.
+        /// </summary>
+        internal static string label2 {
+            get {
+                return ResourceManager.GetString("label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Open Exercise.
+        /// </summary>
+        internal static string mIAbrir {
+            get {
+                return ResourceManager.GetString("mIAbrir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Compare Answer.
+        /// </summary>
+        internal static string mIComparar {
+            get {
+                return ResourceManager.GetString("mIComparar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a IDIOMAS.
         /// </summary>
         internal static string mIdiomas {
@@ -93,6 +129,24 @@ namespace CandFilRespySol.RecursosLocalizables {
         internal static string mIPortugues {
             get {
                 return ResourceManager.GetString("mIPortugues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a RESPONSE AND SOLUTION.
+        /// </summary>
+        internal static string mRS {
+            get {
+                return ResourceManager.GetString("mRS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Candidates Filtered Response and Solution.
+        /// </summary>
+        internal static string thisText {
+            get {
+                return ResourceManager.GetString("thisText", resourceCulture);
             }
         }
     }

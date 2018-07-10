@@ -24,6 +24,8 @@ namespace CandFilRespySol.Engine
         public const string FechaDeCreacion = "FechaDeCreacion";
         public const string Clave = "Clave";
         public const string Extension = ".mflm";
+        public const string ExtensionFile = "mflm";
+        public const string FiltroFile = " | *.mflm";
         public const string ArchivoEjecutable = "CandFilRespySol.exe";
         public const string ProgramaId = "CandFilRespySol";
         public const string Comando = "open";
@@ -45,6 +47,8 @@ namespace CandFilRespySol.Engine
         public const string Down = "Down";
         public const string Right = "Right";
         public const string Left = "Left";
+
+        public const string TipoLetra = "Microsoft Sans Serif";
 
 
         public Color GetColorCeldaAct() { return Color.DarkGray; }
@@ -80,6 +84,61 @@ namespace CandFilRespySol.Engine
         public void SetIdioma(string v) { idioma = v; }
 
         public string GetIdioma() { return idioma; }
+
+        public string NombreAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Text Files" + FiltroFile;
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Arquivos de Textos" + FiltroFile;
+                    break;
+                default:
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+            }
+            return nombreJuego;
+        }
+
+        public string TextoAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Abrir Juego";
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Open Game";
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Jogo Aberto";
+                    break;
+                default:
+                    nombreJuego = "Abrir Juego";
+                    break;
+            }
+            return nombreJuego;
+        }
+
+        private string pathArchivo = string.Empty;
+
+        public string GetPathArchivo()
+        {
+            return pathArchivo;
+        }
+
+        public void SetPathArchivo(string pArchivo)
+        {
+            pathArchivo = pArchivo;
+        }
+
 
     }
 }

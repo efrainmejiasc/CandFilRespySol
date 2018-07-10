@@ -129,4 +129,22 @@
   <data name="mIPortugues" xml:space="preserve">
     <value>Portugues</value>
   </data>
+  <data name="mRS" xml:space="preserve">
+    <value>RESPUESTA Y SOLUCION</value>
+  </data>
+  <data name="thisText" xml:space="preserve">
+    <value>Candidatos Filtrados Respuesta y Solución</value>
+  </data>
+  <data name="mIAbrir" xml:space="preserve">
+    <value>Abrir Ejercicio</value>
+  </data>
+  <data name="mIComparar" xml:space="preserve">
+    <value>Comparar Respuesta</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Respuesta</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Solucion</value>
+  </data>
 </root>

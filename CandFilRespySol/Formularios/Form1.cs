@@ -1,5 +1,6 @@
 ﻿using CandFilRespySol.Engine;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,9 @@ namespace CandFilRespySol
         private TextBox[,] txtSudoku = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DEL SUDOKU
         private TextBox[,] txtSudoku2 = new TextBox[9, 9]; //ARRAY CONTENTIVO DE LOS TEXTBOX DEL GRAFICO DE CANDIDATOS
         private Button[] btnPincel = new Button[9];// ARRAY CONTENTIVO DE LOS BOTONES DE PINCELES IZQUIERDO
+        private string[,] valorNumeros = new string[9, 9];
+        private string[,] valorSolucion = new string[9, 9];
+        private string[,] valorRespuesta = new string[9, 9];
         private string pathArchivo = string.Empty;
         private bool pincelMarcador = false;
         private Color colorFondoAct;
@@ -51,6 +55,10 @@ namespace CandFilRespySol
             AsociarTxtMatriz2(txtSudoku2);
             AsociarBtnPincel(btnPincel);
             Funcion.ColoresPincel(btnPincel);
+            if (Valor.GetPathArchivo() != null && Valor.GetPathArchivo() != string.Empty)
+            {
+                AbrirJuego(Valor.GetPathArchivo());
+            }
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -190,10 +198,16 @@ namespace CandFilRespySol
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
+            this.Text = RecursosLocalizables.StringResources.thisText;
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
             mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
             mIPortugues.Text = RecursosLocalizables.StringResources.mIPortugues;
+            mRS.Text = RecursosLocalizables.StringResources.mRS;
+            mIAbrir.Text = RecursosLocalizables.StringResources.mIAbrir;
+            mIComparar.Text = RecursosLocalizables.StringResources.mIComparar;
+            label1.Text = RecursosLocalizables.StringResources.label1;
+            label2.Text = RecursosLocalizables.StringResources.label2;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -363,6 +377,43 @@ namespace CandFilRespySol
             {
                 txt.BackColor = colorCeldaAnt;
             }
+        }
+        // *****************************************************************************************************
+
+        private void abrirEjercicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pathArchivo = null;
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            pathArchivo = openFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            AbrirJuego(pathArchivo);
+        }
+
+        private void AbrirJuego(string pathArchivo)
+        {
+            Valor.SetPathArchivo(pathArchivo);
+            txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
+            valorNumeros = Funcion.SetValorNumeros(arrText, valorNumeros);
+            valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
+            valorRespuesta = Funcion.SetValorRespuesta(arrText, valorRespuesta);
+            SetearJuego();
+        }
+
+        private void SetearJuego()
+        { 
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorNumeros);
+            txtSudoku = Funcion.SetearTextColor(txtSudoku, valorSolucion);
+            txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorRespuesta);
         }
 
         //***************************************************************************************

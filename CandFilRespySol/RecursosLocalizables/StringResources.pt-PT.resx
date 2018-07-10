@@ -118,33 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="mIdiomas" xml:space="preserve">
-    <value>IDIOMAS</value>
+    <value>LANGUAGES</value>
   </data>
   <data name="mIEspañol" xml:space="preserve">
-    <value>Español</value>
+    <value>Espanhol</value>
   </data>
   <data name="mIIngles" xml:space="preserve">
-    <value>Ingles</value>
+    <value>Inglês</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
     <value>Portugues</value>
   </data>
+  <data name="thisText" xml:space="preserve">
+    <value>Candidatos Filtrados Resposta e Solução</value>
+  </data>
   <data name="mRS" xml:space="preserve">
-    <value>RESPONSE AND SOLUTION</value>
+    <value>RESPOSTA E SOLUÇÃO</value>
   </data>
   <data name="mIAbrir" xml:space="preserve">
-    <value>Open Exercise</value>
+    <value>Exercício Aberto</value>
   </data>
   <data name="mIComparar" xml:space="preserve">
-    <value>Compare Answer</value>
+    <value>Comparar Resposta</value>
   </data>
   <data name="label1" xml:space="preserve">
-    <value>Answer</value>
+    <value>Responder</value>
   </data>
   <data name="label2" xml:space="preserve">
-    <value>Solution</value>
-  </data>
-  <data name="thisText" xml:space="preserve">
-    <value>Candidates Filtered Response and Solution</value>
+    <value>Solução</value>
   </data>
 </root>
