@@ -250,6 +250,8 @@ namespace CandFilEjerySol
        //**************************************************************************************************
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            bool resultado = Funcion.ExisteValorIngresado(valorIngresado);
+            if (!resultado) return;
             pathArchivo = Valor.GetPathArchivo();
             if (pathArchivo == string.Empty)
             {
@@ -297,7 +299,7 @@ namespace CandFilEjerySol
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.ReadWriteTxt(pathArchivo); }
             Funcion.GuardarValoresIngresados(pathArchivo, valorIngresado);
             Funcion.GuardarColoresIngresados(pathArchivo, txtSudoku);
-            Funcion.GuardarValoresVacios(pathArchivo, valorVacios);
+            //Funcion.GuardarValoresVacios(pathArchivo, valorVacios);
             if (Funcion.ExiteArchivo(pathArchivo)) { Funcion.OnlyReadTxt(pathArchivo); }
         }
 
@@ -306,6 +308,11 @@ namespace CandFilEjerySol
             txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
             Funcion.SetearTextBoxLimpio(txtSudoku);
             Valor.SetPathArchivo(string.Empty);
+            pincelMarcador = false;
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = 1;
+            valorIngresado = new string[9, 9];
         }
     }
 }

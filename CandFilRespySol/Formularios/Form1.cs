@@ -35,6 +35,8 @@ namespace CandFilRespySol
         private bool pincelMarcador = false;
         private Color colorFondoAct;
         private Color colorCeldaAnt;
+        bool borrado = false;
+
 
         private int[] position = new int[2];
         int row = -1;
@@ -217,7 +219,7 @@ namespace CandFilRespySol
             {
                 pincelMarcador = false;
                 txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
-                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                //txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                 btnSelectColor.BackColor = Color.Silver;
                 btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
                 btnSelectColor.FlatAppearance.BorderSize = 2;
@@ -256,6 +258,9 @@ namespace CandFilRespySol
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            txt.ForeColor = Color.Blue;
+
             if (!char.IsNumber(e.KeyChar))
             {
                 e.Handled = true;
@@ -272,7 +277,10 @@ namespace CandFilRespySol
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
-            //SetearJuego();
+            
+            txt.Text = valorNumeros[row, col];
+ 
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -291,6 +299,7 @@ namespace CandFilRespySol
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
             txt.BackColor = Color.WhiteSmoke;
+            borrado = true;
         }
 
         private void txt00_Leave(object sender, EventArgs e)
@@ -303,6 +312,18 @@ namespace CandFilRespySol
             {
                 txt.BackColor = colorCeldaAnt;
             }
+            else
+            {
+                if (txt.Text == string.Empty || borrado == true)
+                {
+                    txt.BackColor = Color.WhiteSmoke;
+                    borrado = false;
+                }
+                else if (txt.Text != string.Empty && borrado == false)
+                {
+                    txt.BackColor = colorFondoAct;
+                }
+            }
         }
 
         //****************************************************************************************
@@ -314,21 +335,16 @@ namespace CandFilRespySol
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-            if (pincelMarcador)
-            {
-                txtSudoku2[row, col].BackColor = colorFondoAct;
-            }
-            else
-            {
-                colorCeldaAnt = txt.BackColor;
-                txt.BackColor = Valor.GetColorCeldaAct();
-            }
+
+            colorCeldaAnt = txt.BackColor;
+            txt.BackColor = Valor.GetColorCeldaAct();
         }
 
         private void t00_KeyPress(object sender, KeyPressEventArgs e)
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
+
             if (!char.IsNumber(e.KeyChar))
             {
                 e.Handled = true;
@@ -347,7 +363,10 @@ namespace CandFilRespySol
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-            //SetearJuego();
+
+            txt.Text = valorSolucion[row, col];
+         
+
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
             {
@@ -365,7 +384,7 @@ namespace CandFilRespySol
         {
             TextBox txt = (TextBox)sender;
             txt.Select(0, 0);
-            txt.BackColor = Color.WhiteSmoke;
+            txt.BackColor = colorCeldaAnt;
         }
 
         private void t00_Leave(object sender, EventArgs e)
@@ -373,10 +392,7 @@ namespace CandFilRespySol
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-            if (!pincelMarcador)
-            {
-                txt.BackColor = colorCeldaAnt;
-            }
+            txt.BackColor = Color.WhiteSmoke;
         }
         // *****************************************************************************************************
 
@@ -402,18 +418,23 @@ namespace CandFilRespySol
         {
             Valor.SetPathArchivo(pathArchivo);
             txtSudoku = Funcion.SetearTextBoxLimpio(txtSudoku);
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             ArrayList arrText = Funcion.AbrirValoresArchivo(pathArchivo);
             valorNumeros = Funcion.SetValorNumeros(arrText, valorNumeros);
             valorSolucion = Funcion.SetValorSolucion(arrText, valorSolucion);
-            valorRespuesta = Funcion.SetValorRespuesta(arrText, valorRespuesta);
-            SetearJuego();
+            //valorRespuesta = Funcion.SetValorRespuesta(arrText, valorRespuesta);
+            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorNumeros);
+            btnSelectColor.BackColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
+            btnSelectColor.FlatAppearance.BorderSize = 1;
         }
 
-        private void SetearJuego()
-        { 
-            txtSudoku = Funcion.SetearTextBoxJuego(txtSudoku, valorNumeros);
-            txtSudoku = Funcion.SetearTextColor(txtSudoku, valorSolucion);
-            txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorRespuesta);
+        private void mIComparar_Click(object sender, EventArgs e)
+        {
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+            txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            //txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorRespuesta);
         }
 
         //***************************************************************************************

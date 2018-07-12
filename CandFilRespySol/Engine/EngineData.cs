@@ -139,6 +139,5 @@ namespace CandFilRespySol.Engine
             pathArchivo = pArchivo;
         }
 
-
     }
 }

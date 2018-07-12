@@ -1,0 +1,10 @@
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\bin\Debug\CandOrdEjerySol.exe.config
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\bin\Debug\CandOrdEjerySol.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\bin\Debug\CandOrdEjerySol.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.csprojResolveAssemblyReference.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.Properties.Resources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.csproj.GenerateResource.Cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySol.Form1.resources

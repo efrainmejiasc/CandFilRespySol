@@ -275,6 +275,7 @@
             this.mIComparar.Name = "mIComparar";
             this.mIComparar.Size = new System.Drawing.Size(183, 22);
             this.mIComparar.Text = "Comparar Respuesta";
+            this.mIComparar.Click += new System.EventHandler(this.mIComparar_Click);
             // 
             // mArchivo
             // 

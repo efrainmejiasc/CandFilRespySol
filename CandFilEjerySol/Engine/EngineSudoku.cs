@@ -272,5 +272,22 @@ namespace CandFilEjerySol.Engine
             return cajaTexto;
         }
 
+        public bool ExisteValorIngresado(string[,] plantilla)
+        {
+            bool existeValor = false;
+            for (int f = 0; f <= 8; f++)
+            {
+                for (int c = 0; c <= 8; c++)
+                {
+                    if (plantilla[f, c] != null && plantilla[f, c] != string.Empty)
+                    {
+                        existeValor = true;
+                        return existeValor;
+                    }
+                }
+            }
+            return existeValor;
+        }
+
     }
 }
