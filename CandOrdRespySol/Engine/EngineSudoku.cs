@@ -290,5 +290,25 @@ namespace CandOrdRespySol.Engine
             return cajaTexto;
         }
 
+        public int[] Position(string sentido, int f, int c)
+        {
+            switch (sentido)
+            {
+                case "Up":
+                    pos[0] = f - 1; pos[1] = c;
+                    break;
+                case "Down":
+                    pos[0] = f + 1; pos[1] = c;
+                    break;
+                case "Right":
+                    pos[0] = f; pos[1] = c + 1;
+                    break;
+                case "Left":
+                    pos[0] = f; pos[1] = c - 1;
+                    break;
+            }
+            return pos;
+        }
+
     }
 }

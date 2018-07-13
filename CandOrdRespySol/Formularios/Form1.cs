@@ -35,6 +35,7 @@ namespace CandOrdRespySol
         private Color colorFondoAct;
         private Color colorCeldaAnt;
         bool borrado = false;
+        bool comparacion = false;
 
 
         private int[] position = new int[2];
@@ -48,6 +49,7 @@ namespace CandOrdRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (DateTime.Now > Convert.ToDateTime("13/08/2018")) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -195,11 +197,9 @@ namespace CandOrdRespySol
 
         private void AplicarIdioma()
         {
-            this.MaximumSize = new Size(1161, 680);
-            this.Size = new Size(1161, 680);
+            this.MaximumSize = new Size(1292 , 712);
+            this.Size = new Size(1292 , 712);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
-           
-
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -209,7 +209,7 @@ namespace CandOrdRespySol
             {
                 pincelMarcador = false;
                 txtSudoku = Funcion.SetearTextColorInicio(txtSudoku);
-                txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
+                //txtSudoku2 = Funcion.SetearTextColorInicio(txtSudoku2);
                 btnSelectColor.BackColor = Color.Silver;
                 btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
                 btnSelectColor.FlatAppearance.BorderSize = 2;
@@ -236,6 +236,210 @@ namespace CandOrdRespySol
             btnSelectColor.BackColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
+        }
+
+        //*****************************************************************************
+
+        private void txt00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            if (pincelMarcador)
+            {
+                txtSudoku[row, col].BackColor = colorFondoAct;
+            }
+            else
+            {
+                colorCeldaAnt = txt.BackColor;
+                txt.BackColor = Valor.GetColorCeldaAct();
+            }
+        }
+
+        private void txt00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            txt.ForeColor = Color.Blue;
+
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+        }
+
+        private void txt00_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+
+            txt.Text = valorNumeros[row, col];
+
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void txt00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = Color.WhiteSmoke;
+            borrado = true;
+        }
+
+        private void txt00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(3, 1));
+            col = Int32.Parse(txt.Name.Substring(4, 1));
+            if (!pincelMarcador)
+            {
+                txt.BackColor = colorCeldaAnt;
+            }
+            else
+            {
+                if (txt.Text == string.Empty || borrado == true)
+                {
+                    txt.BackColor = Color.WhiteSmoke;
+                    borrado = false;
+                }
+                else if (txt.Text != string.Empty && borrado == false)
+                {
+                    txt.BackColor = colorFondoAct;
+                }
+            }
+        }
+
+        //*****************************************************************************
+
+        private void t00_Enter(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
+
+            colorCeldaAnt = txt.BackColor;
+            txt.BackColor = Valor.GetColorCeldaAct();
+        }
+
+        private void t00_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else if (char.IsNumber(e.KeyChar))
+            {
+                e.Handled = false;
+                if (txt.Text.Length > 0) { txt.Text = string.Empty; }
+            }
+            txt.Text = string.Empty;
+        }
+
+        private void t00_KeyUp(object sender, KeyEventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+
+            if (comparacion)
+            {
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+                txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            }
+            else
+            {
+                txt.BackColor = Color.WhiteSmoke;
+            }
+
+
+            string sentido = e.KeyCode.ToString();
+            if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
+            {
+                try
+                {
+                    position = Funcion.Position(sentido, row, col);
+                    txtSudoku2[position[0], position[1]].Focus();
+                }
+                catch { txtSudoku2[row, col].Focus(); }
+                return;
+            }
+        }
+
+        private void t00_DoubleClick(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            txt.Select(0, 0);
+            txt.BackColor = colorCeldaAnt;
+        }
+
+        private void t00_Leave(object sender, EventArgs e)
+        {
+            TextBox txt = (TextBox)sender;
+            row = Int32.Parse(txt.Name.Substring(1, 1));
+            col = Int32.Parse(txt.Name.Substring(2, 1));
+            if (comparacion)
+            {
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+                txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            }
+            else
+            {
+                txt.BackColor = Color.WhiteSmoke;
+            }
+        }
+
+        //***************************************************************************
+        private void mIAbrir_Click(object sender, EventArgs e)
+        {
+            pathArchivo = null;
+            string nombreIdioma = Valor.GetNombreIdioma();
+            this.openFileDialog1.FileName = string.Empty;
+            this.openFileDialog1.Filter = Valor.NombreAbrirJuego(nombreIdioma);
+            this.openFileDialog1.Title = Valor.TextoAbrirJuego(nombreIdioma);
+            this.openFileDialog1.DefaultExt = EngineData.ExtensionFile;
+            this.openFileDialog1.ShowDialog();
+            pathArchivo = openFileDialog1.FileName;
+
+            if (pathArchivo == string.Empty)
+            {
+                return;
+            }
+            AbrirJuego(pathArchivo);
+        }
+
+        private void mIComparar_Click(object sender, EventArgs e)
+        {
+            txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
+            txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+            txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            comparacion = true;
         }
     }
 }

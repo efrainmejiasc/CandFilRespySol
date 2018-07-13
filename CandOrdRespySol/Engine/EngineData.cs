@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,8 @@ namespace CandOrdRespySol.Engine
 
         public const string TipoLetra = "Microsoft Sans Serif";
 
+        public Color GetColorCeldaAct() { return Color.DarkGray; }
+
         private string nombreIdioma = string.Empty;
 
         public void SetNombreIdioma(string v) { nombreIdioma = v; }
@@ -91,6 +94,48 @@ namespace CandOrdRespySol.Engine
         public void SetPathArchivo(string pArchivo)
         {
             pathArchivo = pArchivo;
+        }
+
+        public string NombreAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Text Files" + FiltroFile;
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Arquivos de Textos" + FiltroFile;
+                    break;
+                default:
+                    nombreJuego = "Archivos de Texto" + FiltroFile;
+                    break;
+            }
+            return nombreJuego;
+        }
+
+        public string TextoAbrirJuego(string lenguaje)
+        {
+            string nombreJuego = string.Empty;
+            switch (lenguaje)
+            {
+                case ("Español"):
+                    nombreJuego = "Abrir Juego";
+                    break;
+                case ("Ingles"):
+                    nombreJuego = "Open Game";
+                    break;
+                case ("Portugues"):
+                    nombreJuego = "Jogo Aberto";
+                    break;
+                default:
+                    nombreJuego = "Abrir Juego";
+                    break;
+            }
+            return nombreJuego;
         }
 
     }

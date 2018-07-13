@@ -36,6 +36,7 @@ namespace CandFilRespySol
         private Color colorFondoAct;
         private Color colorCeldaAnt;
         bool borrado = false;
+        bool comparacion = false;
 
 
         private int[] position = new int[2];
@@ -50,6 +51,7 @@ namespace CandFilRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (DateTime.Now > Convert.ToDateTime("13/08/2018")){ Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -364,8 +366,15 @@ namespace CandFilRespySol
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
 
-            txt.Text = valorSolucion[row, col];
-         
+            if (comparacion)
+            {
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+                txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            }
+            else
+            {
+                txt.BackColor = Color.WhiteSmoke;
+            }
 
             string sentido = e.KeyCode.ToString();
             if (sentido == EngineData.Up || sentido == EngineData.Down || sentido == EngineData.Right || sentido == EngineData.Left)
@@ -392,8 +401,17 @@ namespace CandFilRespySol
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-            txt.BackColor = Color.WhiteSmoke;
+            if (comparacion)
+            {
+                txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
+                txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            }
+            else
+            {
+                txt.BackColor = Color.WhiteSmoke;
+            }
         }
+
         // *****************************************************************************************************
 
         private void abrirEjercicioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -427,6 +445,7 @@ namespace CandFilRespySol
             btnSelectColor.BackColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
+            comparacion = false;
         }
 
         private void mIComparar_Click(object sender, EventArgs e)
@@ -434,6 +453,7 @@ namespace CandFilRespySol
             txtSudoku2 = Funcion.SetearTextBoxLimpio(txtSudoku2);
             txtSudoku2 = Funcion.SetearTextBoxJuego(txtSudoku2, valorNumeros);
             txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorSolucion);
+            comparacion = true;
             //txtSudoku2 = Funcion.SetearTextColor(txtSudoku2, valorRespuesta);
         }
 
