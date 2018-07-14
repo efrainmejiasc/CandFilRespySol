@@ -38,7 +38,7 @@ namespace CandOrdEjerySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DateTime.Now > Convert.ToDateTime("13/08/2018")) { Application.Exit(); }
+            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES"))) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             label3.Text = "EJERCICIO Y SOLUCION";
             txtSudoku = AsociarTxtMatriz(txtSudoku);

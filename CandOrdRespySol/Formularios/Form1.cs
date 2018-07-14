@@ -49,7 +49,7 @@ namespace CandOrdRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DateTime.Now > Convert.ToDateTime("13/08/2018")) { Application.Exit(); }
+            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES"))) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -200,6 +200,25 @@ namespace CandOrdRespySol
             this.MaximumSize = new Size(1292 , 712);
             this.Size = new Size(1292 , 712);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
+            if (pathArchivo == string.Empty)
+            {
+                this.Text = RecursosLocalizables.StringResources.thisText;
+            }
+           else
+            {
+                this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
+            }
+            mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
+            mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
+            mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
+            mIPortugues.Text = RecursosLocalizables.StringResources.mIPortugues;
+            mRS.Text = RecursosLocalizables.StringResources.mRS;
+            mIAbrir.Text = RecursosLocalizables.StringResources.mIAbrir;
+            mIComparar.Text = RecursosLocalizables.StringResources.mIComparar;
+            lbl1.Text = RecursosLocalizables.StringResources.lbl1;
+            lbl2.Text = RecursosLocalizables.StringResources.lbl2;
+            lblCelda1.Text = RecursosLocalizables.StringResources.lblCelda1;
+            lblCelda2.Text = RecursosLocalizables.StringResources.lblCelda2;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -236,6 +255,7 @@ namespace CandOrdRespySol
             btnSelectColor.BackColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
+            comparacion = false;
         }
 
         //*****************************************************************************
@@ -432,6 +452,7 @@ namespace CandOrdRespySol
                 return;
             }
             AbrirJuego(pathArchivo);
+            this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
         }
 
         private void mIComparar_Click(object sender, EventArgs e)

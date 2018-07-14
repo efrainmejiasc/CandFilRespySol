@@ -117,46 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lbl1" xml:space="preserve">
-    <value>RESPUESTA</value>
-  </data>
-  <data name="lbl2" xml:space="preserve">
-    <value>SOLUCION</value>
-  </data>
-  <data name="lblCelda2" xml:space="preserve">
-    <value>Celdas</value>
-  </data>
-  <data name="lblCelda1" xml:space="preserve">
-    <value>Celdas</value>
-  </data>
-  <data name="mIAbrir" xml:space="preserve">
-    <value>Abrir Ejercicio</value>
-  </data>
-  <data name="mIComparar" xml:space="preserve">
-    <value>Comparar Respuesta</value>
-  </data>
   <data name="mIdiomas" xml:space="preserve">
-    <value>IDIOMAS-LANGUAGES</value>
+    <value>LANGUAGES</value>
   </data>
   <data name="mIEspañol" xml:space="preserve">
-    <value>Español</value>
+    <value>Spanish</value>
   </data>
   <data name="mIIngles" xml:space="preserve">
-    <value>Ingles</value>
+    <value>English</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
-    <value>Portugues</value>
+    <value>Portuguese</value>
   </data>
   <data name="mRS" xml:space="preserve">
-    <value>RESPUESTA Y SOLUCION</value>
-  </data>
-  <data name="label1" xml:space="preserve">
-    <value>Respuestas</value>
-  </data>
-  <data name="label2" xml:space="preserve">
-    <value>Solucion</value>
+    <value>RESPONSE AND SOLUTION</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>Candidatos Ordenados Respuesta y Solución</value>
+    <value>Candidates Ordered Response and Solution</value>
+  </data>
+  <data name="mIAbrir" xml:space="preserve">
+    <value>Open Exercise</value>
+  </data>
+  <data name="mIComparar" xml:space="preserve">
+    <value>Compare Answer</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Solution</value>
+  </data>
+  <data name="lbl1" xml:space="preserve">
+    <value>ANSWER</value>
+  </data>
+  <data name="lbl2" xml:space="preserve">
+    <value>SOLUTION</value>
+  </data>
+  <data name="lbl2Celda2" xml:space="preserve">
+    <value>Cells</value>
+  </data>
+  <data name="lblCelda1" xml:space="preserve">
+    <value>Cells</value>
   </data>
 </root>

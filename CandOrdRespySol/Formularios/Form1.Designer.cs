@@ -43,8 +43,8 @@
             this.mIIngles = new System.Windows.Forms.ToolStripMenuItem();
             this.mIEspañol = new System.Windows.Forms.ToolStripMenuItem();
             this.mIPortugues = new System.Windows.Forms.ToolStripMenuItem();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.btnSelectColor = new System.Windows.Forms.Button();
             this.pincelJ = new System.Windows.Forms.Button();
             this.pincelI = new System.Windows.Forms.Button();
@@ -55,7 +55,7 @@
             this.pincelC = new System.Windows.Forms.Button();
             this.pincelB = new System.Windows.Forms.Button();
             this.pincelA = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCelda1 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -156,7 +156,7 @@
             this.txt02 = new System.Windows.Forms.TextBox();
             this.txt01 = new System.Windows.Forms.TextBox();
             this.txt00 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCelda2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -269,8 +269,8 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.label4);
-            this.panel10.Controls.Add(this.label3);
+            this.panel10.Controls.Add(this.lbl2);
+            this.panel10.Controls.Add(this.lbl1);
             this.panel10.Controls.Add(this.btnSelectColor);
             this.panel10.Controls.Add(this.pincelJ);
             this.panel10.Controls.Add(this.pincelI);
@@ -378,38 +378,41 @@
             // mIIngles
             // 
             this.mIIngles.Name = "mIIngles";
-            this.mIIngles.Size = new System.Drawing.Size(128, 22);
+            this.mIIngles.Size = new System.Drawing.Size(152, 22);
             this.mIIngles.Text = "English";
+            this.mIIngles.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIEspañol
             // 
             this.mIEspañol.Name = "mIEspañol";
-            this.mIEspañol.Size = new System.Drawing.Size(128, 22);
+            this.mIEspañol.Size = new System.Drawing.Size(152, 22);
             this.mIEspañol.Text = "Español";
+            this.mIEspañol.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
             // mIPortugues
             // 
             this.mIPortugues.Name = "mIPortugues";
-            this.mIPortugues.Size = new System.Drawing.Size(128, 22);
+            this.mIPortugues.Size = new System.Drawing.Size(152, 22);
             this.mIPortugues.Text = "Português";
+            this.mIPortugues.Click += new System.EventHandler(this.Lenguaje_Click);
             // 
-            // label4
+            // lbl2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(840, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 112;
-            this.label4.Text = "label4";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(840, 121);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(35, 13);
+            this.lbl2.TabIndex = 112;
+            this.lbl2.Text = "label4";
             // 
-            // label3
+            // lbl1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(194, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "label3";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(194, 121);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(35, 13);
+            this.lbl1.TabIndex = 111;
+            this.lbl1.Text = "label3";
             // 
             // btnSelectColor
             // 
@@ -551,14 +554,14 @@
             this.pincelA.UseVisualStyleBackColor = false;
             this.pincelA.Click += new System.EventHandler(this.ColorMarcador_Click);
             // 
-            // label1
+            // lblCelda1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(573, 181);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Celdas";
+            this.lblCelda1.AutoSize = true;
+            this.lblCelda1.Location = new System.Drawing.Point(573, 181);
+            this.lblCelda1.Name = "lblCelda1";
+            this.lblCelda1.Size = new System.Drawing.Size(39, 13);
+            this.lblCelda1.TabIndex = 22;
+            this.lblCelda1.Text = "Celdas";
             // 
             // textBox10
             // 
@@ -2369,14 +2372,14 @@
             this.txt00.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt00_KeyUp);
             this.txt00.Leave += new System.EventHandler(this.txt00_Leave);
             // 
-            // label2
+            // lblCelda2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1208, 181);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Celdas";
+            this.lblCelda2.AutoSize = true;
+            this.lblCelda2.Location = new System.Drawing.Point(1208, 181);
+            this.lblCelda2.Name = "lblCelda2";
+            this.lblCelda2.Size = new System.Drawing.Size(39, 13);
+            this.lblCelda2.TabIndex = 43;
+            this.lblCelda2.Text = "Celdas";
             // 
             // textBox1
             // 
@@ -4197,7 +4200,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 673);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCelda2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
@@ -4216,7 +4219,7 @@
             this.Controls.Add(this.textBox25);
             this.Controls.Add(this.textBox26);
             this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCelda1);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox12);
@@ -4273,8 +4276,8 @@
         private System.Windows.Forms.ToolStripMenuItem mIIngles;
         private System.Windows.Forms.ToolStripMenuItem mIEspañol;
         private System.Windows.Forms.ToolStripMenuItem mIPortugues;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button btnSelectColor;
         private System.Windows.Forms.Button pincelJ;
         private System.Windows.Forms.Button pincelI;
@@ -4285,7 +4288,7 @@
         private System.Windows.Forms.Button pincelC;
         private System.Windows.Forms.Button pincelB;
         private System.Windows.Forms.Button pincelA;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCelda1;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
@@ -4386,7 +4389,7 @@
         private System.Windows.Forms.TextBox txt02;
         private System.Windows.Forms.TextBox txt01;
         private System.Windows.Forms.TextBox txt00;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCelda2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

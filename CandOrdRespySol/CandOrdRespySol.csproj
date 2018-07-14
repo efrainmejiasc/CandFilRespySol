@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SudokuEnCasa.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,6 +76,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="RecursosLocalizables\StringResorces.EN-US.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.en-US.resx" />
     <EmbeddedResource Include="RecursosLocalizables\StringResources.ES-VE.resx" />
     <EmbeddedResource Include="RecursosLocalizables\StringResources.PT-PT.resx" />
     <EmbeddedResource Include="RecursosLocalizables\StringResources.resx">
@@ -92,6 +96,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SudokuEnCasa.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -133,7 +133,7 @@
     <value>RESPUESTA Y SOLUCION</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>Candidatos Filtrados Respuesta y Solución</value>
+    <value>Candidatos Ordenados Respuesta y Solución</value>
   </data>
   <data name="mIAbrir" xml:space="preserve">
     <value>Abrir Ejercicio</value>
@@ -146,5 +146,17 @@
   </data>
   <data name="label2" xml:space="preserve">
     <value>Solucion</value>
+  </data>
+  <data name="lblCelda1" xml:space="preserve">
+    <value>Celdas</value>
+  </data>
+  <data name="lbl2Celda2" xml:space="preserve">
+    <value>Celdas</value>
+  </data>
+  <data name="lbl2" xml:space="preserve">
+    <value>SOLUCION</value>
+  </data>
+  <data name="lbl1" xml:space="preserve">
+    <value>RESPUESTA</value>
   </data>
 </root>

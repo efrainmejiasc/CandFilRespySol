@@ -51,7 +51,7 @@ namespace CandFilRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DateTime.Now > Convert.ToDateTime("13/08/2018")){ Application.Exit(); }
+            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES"))) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -202,7 +202,14 @@ namespace CandFilRespySol
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
-            this.Text = RecursosLocalizables.StringResources.thisText;
+            if (pathArchivo == string.Empty)
+            {
+                this.Text = RecursosLocalizables.StringResources.thisText;
+            }
+            else
+            {
+                this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
+            }
             mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
             mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
             mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
@@ -430,6 +437,7 @@ namespace CandFilRespySol
                 return;
             }
             AbrirJuego(pathArchivo);
+            this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
         }
 
         private void AbrirJuego(string pathArchivo)
