@@ -99,6 +99,15 @@ namespace CandOrdRespySol.RecursosLocalizables {
         /// <summary>
         ///   Busca una cadena traducida similar a Celdas.
         /// </summary>
+        internal static string lbl2Celda2 {
+            get {
+                return ResourceManager.GetString("lbl2Celda2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Celdas.
+        /// </summary>
         internal static string lblCelda1 {
             get {
                 return ResourceManager.GetString("lblCelda1", resourceCulture);

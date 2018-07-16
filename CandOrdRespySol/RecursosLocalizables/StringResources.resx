@@ -159,4 +159,7 @@
   <data name="thisText" xml:space="preserve">
     <value>Candidatos Ordenados Respuesta y Solución</value>
   </data>
+  <data name="lbl2Celda2" xml:space="preserve">
+    <value>Celdas</value>
+  </data>
 </root>

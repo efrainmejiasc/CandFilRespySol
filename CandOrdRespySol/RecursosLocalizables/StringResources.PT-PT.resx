@@ -139,4 +139,7 @@
   <data name="mIdiomas" xml:space="preserve">
     <value>LANGUAGES</value>
   </data>
+  <data name="lblCelda2" xml:space="preserve">
+    <value>Células</value>
+  </data>
 </root>

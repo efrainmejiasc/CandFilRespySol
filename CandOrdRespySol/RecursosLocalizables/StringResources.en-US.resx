@@ -159,4 +159,7 @@
   <data name="lblCelda1" xml:space="preserve">
     <value>Cells</value>
   </data>
+  <data name="lblCelda2" xml:space="preserve">
+    <value>Cells</value>
+  </data>
 </root>

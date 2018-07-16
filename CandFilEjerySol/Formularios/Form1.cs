@@ -46,7 +46,6 @@ namespace CandFilEjerySol
             txtSudoku = AsociarTxtMatriz(txtSudoku);
             btnPincel = AsociarBtnPincel(btnPincel);
             btnPincel = Funcion.ColoresPincel(btnPincel);
-
         }
 
         private TextBox[,] AsociarTxtMatriz(TextBox[,] txtSudoku)
@@ -314,6 +313,7 @@ namespace CandFilEjerySol
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
             valorIngresado = new string[9, 9];
+            borrado = false;
         }
     }
 }

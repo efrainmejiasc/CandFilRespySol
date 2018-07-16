@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CandOrdRespySol.Engine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,11 +13,20 @@ namespace CandOrdRespySol
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            EngineData Valor = EngineData.Instance();
+            if (args.Length == 0)
+            {
+                Application.Run(new Form1());
+            }
+            else
+            {
+                Valor.SetPathArchivo(args[0]);
+                Application.Run(new Form1());
+            }
         }
     }
 }

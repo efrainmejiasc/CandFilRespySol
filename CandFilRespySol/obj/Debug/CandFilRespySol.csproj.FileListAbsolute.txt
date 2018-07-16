@@ -18,4 +18,3 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\EN-US\CandFilRespySol.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\ES-VE\CandFilRespySol.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.RecursosLocalizables.StringResources.pt-PT.resources
-C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol\obj\Debug\CandFilRespySol.csprojResolveAssemblyReference.cache

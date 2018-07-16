@@ -17,5 +17,5 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\PT-PT\CandOrdRespySol.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\CandOrdRespySol.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\CandOrdRespySol.pdb
-C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\CandOrdRespySol.csprojResolveAssemblyReference.cache
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\CandOrdRespySol.RecursosLocalizables.StringResources.en-US.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol\obj\Debug\CandOrdRespySol.csprojResolveAssemblyReference.cache

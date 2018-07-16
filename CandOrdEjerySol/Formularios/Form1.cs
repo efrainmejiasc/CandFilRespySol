@@ -136,7 +136,7 @@ namespace CandOrdEjerySol
             col = Int32.Parse(txt.Name.Substring(4, 1));
 
             txt.ForeColor = Color.Black;
-
+          
 
             if (pincelMarcador)
             {
@@ -147,6 +147,52 @@ namespace CandOrdEjerySol
             }
             else
             {
+                if (col == 0)
+                {
+                    valorIngresado[row, col] = "1";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 1)
+                {
+                    valorIngresado[row, col] = "2";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 2)
+                {
+                    valorIngresado[row, col] = "3";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 3)
+                {
+                    valorIngresado[row, col] = "4";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 4)
+                {
+                    valorIngresado[row, col] = "5";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 5)
+                {
+                    valorIngresado[row, col] = "6";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 6)
+                {
+                    valorIngresado[row, col] = "7";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 7)
+                {
+                    valorIngresado[row, col] = "8";
+                    txt.Text = valorIngresado[row, col];
+                }
+                else if (col == 8)
+                {
+                    valorIngresado[row, col] = "9";
+                    txt.Text = valorIngresado[row, col];
+                }
+
                 colorCeldaAnt = txt.BackColor;
                 txt.BackColor = Valor.GetColorCeldaAct();
             }
@@ -394,6 +440,7 @@ namespace CandOrdEjerySol
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
             valorIngresado = new string [9,9];
+            borrado = false;
         }
 
         //**************************************************************************************

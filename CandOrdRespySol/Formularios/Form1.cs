@@ -57,6 +57,7 @@ namespace CandOrdRespySol
             AsociarTxtMatriz2(txtSudoku2);
             AsociarBtnPincel(btnPincel);
             Funcion.ColoresPincel(btnPincel);
+            QuitarCosete();
             if (Valor.GetPathArchivo() != null && Valor.GetPathArchivo() != string.Empty)
             {
                 AbrirJuego(Valor.GetPathArchivo());
@@ -256,6 +257,47 @@ namespace CandOrdRespySol
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
             comparacion = false;
+        }
+
+        private void QuitarCosete()
+        {
+            tC1.GotFocus += delegate { HideCaret(tC1.Handle); };
+            tC2.GotFocus += delegate { HideCaret(tC2.Handle); };
+            tC3.GotFocus += delegate { HideCaret(tC3.Handle); };
+            tC4.GotFocus += delegate { HideCaret(tC4.Handle); };
+            tC5.GotFocus += delegate { HideCaret(tC5.Handle); };
+            tC6.GotFocus += delegate { HideCaret(tC6.Handle); };
+            tC7.GotFocus += delegate { HideCaret(tC7.Handle); };
+            tC8.GotFocus += delegate { HideCaret(tC8.Handle); };
+            tC9.GotFocus += delegate { HideCaret(tC9.Handle); };
+            textBox10.GotFocus += delegate { HideCaret(textBox10.Handle); };
+            textBox11.GotFocus += delegate { HideCaret(textBox11.Handle); };
+            textBox12.GotFocus += delegate { HideCaret(textBox12.Handle); };
+            textBox13.GotFocus += delegate { HideCaret(textBox13.Handle); };
+            textBox14.GotFocus += delegate { HideCaret(textBox14.Handle); };
+            textBox15.GotFocus += delegate { HideCaret(textBox15.Handle); };
+            textBox16.GotFocus += delegate { HideCaret(textBox16.Handle); };
+            textBox17.GotFocus += delegate { HideCaret(textBox17.Handle); };
+            textBox18.GotFocus += delegate { HideCaret(textBox18.Handle); };
+
+            tc10.GotFocus += delegate { HideCaret(tc10.Handle); };
+            tc11.GotFocus += delegate { HideCaret(tc11.Handle); };
+            tc12.GotFocus += delegate { HideCaret(tc12.Handle); };
+            tc13.GotFocus += delegate { HideCaret(tc13.Handle); };
+            tc14.GotFocus += delegate { HideCaret(tc14.Handle); };
+            tc15.GotFocus += delegate { HideCaret(tc15.Handle); };
+            tc16.GotFocus += delegate { HideCaret(tc16.Handle); };
+            tc17.GotFocus += delegate { HideCaret(tc17.Handle); };
+            tc18.GotFocus += delegate { HideCaret(tc18.Handle); };
+            tc19.GotFocus += delegate { HideCaret(tc19.Handle); };
+            tc20.GotFocus += delegate { HideCaret(tc20.Handle); };
+            tc21.GotFocus += delegate { HideCaret(tc21.Handle); };
+            tc22.GotFocus += delegate { HideCaret(tc22.Handle); };
+            tc23.GotFocus += delegate { HideCaret(tc23.Handle); };
+            tc24.GotFocus += delegate { HideCaret(tc24.Handle); };
+            tc25.GotFocus += delegate { HideCaret(tc25.Handle); };
+            tc26.GotFocus += delegate { HideCaret(tc26.Handle); };
+            tc27.GotFocus += delegate { HideCaret(tc27.Handle); };
         }
 
         //*****************************************************************************
