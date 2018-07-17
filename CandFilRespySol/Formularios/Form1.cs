@@ -313,7 +313,6 @@ namespace CandFilRespySol
 
         private void txt00_Leave(object sender, EventArgs e)
         {
-
             TextBox txt = (TextBox)sender;
             row = Int32.Parse(txt.Name.Substring(3, 1));
             col = Int32.Parse(txt.Name.Substring(4, 1));
@@ -343,7 +342,6 @@ namespace CandFilRespySol
             txt.Select(0, 0);
             row = Int32.Parse(txt.Name.Substring(1, 1));
             col = Int32.Parse(txt.Name.Substring(2, 1));
-
 
             colorCeldaAnt = txt.BackColor;
             txt.BackColor = Valor.GetColorCeldaAct();

@@ -184,6 +184,7 @@ namespace CanEjerySol
                 {
                     txt.Text = string.Empty;
                     valorIngresado[row, col] = string.Empty;
+                    lista.Items.Clear();
                 }
                 else
                 {
@@ -231,7 +232,7 @@ namespace CanEjerySol
             col = Int32.Parse(txt.Name.Substring(4, 1));
             if (!pincelMarcador)
             {
-                txt.BackColor = colorFondoAct;
+                txt.BackColor = Color.WhiteSmoke;
             }
             else
             {

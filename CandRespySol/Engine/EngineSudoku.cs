@@ -252,7 +252,7 @@ namespace CandRespySol.Engine
                     if (vIngresado[f, c] != null && vIngresado[f, c] != string.Empty)
                     {
                         cajaTexto[f, c].Text = vIngresado[f, c];
-                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 20);
+                        cajaTexto[f, c].Font = new Font(EngineData.TipoLetra, 8);
                         cajaTexto[f, c].ForeColor = Color.Blue;
 
                     }

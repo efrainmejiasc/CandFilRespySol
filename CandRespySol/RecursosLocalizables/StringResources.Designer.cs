@@ -59,5 +59,95 @@ namespace CandRespySol.RecursosLocalizables {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a RESPUESTA.
+        /// </summary>
+        internal static string label1 {
+            get {
+                return ResourceManager.GetString("label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SOLUCION.
+        /// </summary>
+        internal static string label2 {
+            get {
+                return ResourceManager.GetString("label2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Abrir Ejercicio.
+        /// </summary>
+        internal static string mIAbrir {
+            get {
+                return ResourceManager.GetString("mIAbrir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Comparar Respuesta.
+        /// </summary>
+        internal static string mIComparar {
+            get {
+                return ResourceManager.GetString("mIComparar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a IDIOMAS-LANGUAGES.
+        /// </summary>
+        internal static string mIdiomas {
+            get {
+                return ResourceManager.GetString("mIdiomas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Español.
+        /// </summary>
+        internal static string mIEspañol {
+            get {
+                return ResourceManager.GetString("mIEspañol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a English.
+        /// </summary>
+        internal static string mIIngles {
+            get {
+                return ResourceManager.GetString("mIIngles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Português.
+        /// </summary>
+        internal static string mIPortugues {
+            get {
+                return ResourceManager.GetString("mIPortugues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a RESPUESTA Y SPOLUCION.
+        /// </summary>
+        internal static string mRS {
+            get {
+                return ResourceManager.GetString("mRS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Candidatos  Respuesta y Solución.
+        /// </summary>
+        internal static string thisText {
+            get {
+                return ResourceManager.GetString("thisText", resourceCulture);
+            }
+        }
     }
 }
