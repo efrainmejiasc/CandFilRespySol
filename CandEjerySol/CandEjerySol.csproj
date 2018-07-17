@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E893CD7D-9B86-452F-901F-4EF2AB0B6F70}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CanEjerySol</RootNamespace>
-    <AssemblyName>CanEjerySol</AssemblyName>
+    <RootNamespace>CandEjerySol</RootNamespace>
+    <AssemblyName>CandEjerySol</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -69,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
