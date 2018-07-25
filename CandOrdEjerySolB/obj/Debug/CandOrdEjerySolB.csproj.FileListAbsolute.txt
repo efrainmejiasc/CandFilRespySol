@@ -7,3 +7,12 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySolB.csproj.CoreCompileInputs.cache
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySolB.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySol\obj\Debug\CandOrdEjerySolB.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\bin\Debug\CandOrdEjerySolB.exe.config
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\bin\Debug\CandOrdEjerySolB.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\bin\Debug\CandOrdEjerySolB.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySol.Form1.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySolB.Properties.Resources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySolB.csproj.GenerateResource.Cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySolB.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySolB.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdEjerySolB\obj\Debug\CandOrdEjerySolB.pdb

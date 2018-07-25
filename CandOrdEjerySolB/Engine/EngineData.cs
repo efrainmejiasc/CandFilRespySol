@@ -20,7 +20,7 @@ namespace CandOrdEjerySol.Engine
             return valor;
         }
 
-        public static string Titulo = "Candidatos Ordenados Ejercicio y Solución";
+        public static string Titulo = "B.- Candidatos Ordenados Ejercicio y Solución";
         public const string Up = "Up";
         public const string Down = "Down";
         public const string Right = "Right";

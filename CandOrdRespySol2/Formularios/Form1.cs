@@ -49,7 +49,6 @@ namespace CandOrdRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES"))) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -198,7 +197,7 @@ namespace CandOrdRespySol
 
         private void AplicarIdioma()
         {
-           /* this.MaximumSize = new Size(1292 , 712);
+            this.MaximumSize = new Size(1292 , 712);
             this.Size = new Size(1292 , 712);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
             if (pathArchivo == string.Empty)
@@ -219,7 +218,7 @@ namespace CandOrdRespySol
             lbl1.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.lbl1;
             lbl2.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.lbl2;
             lblCelda1.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.lblCelda1;
-            lblCelda2.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.lblCelda2;*/
+            lblCelda2.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.lblCelda2;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -257,7 +256,7 @@ namespace CandOrdRespySol
             btnSelectColor.FlatAppearance.BorderColor = Color.Silver;
             btnSelectColor.FlatAppearance.BorderSize = 1;
             comparacion = false;
-           // this.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
+            this.Text = CandOrdRespySol2.RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
         }
 
         private void QuitarCosete()

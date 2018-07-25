@@ -98,7 +98,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="mIAbrir" xml:space="preserve">
-    <value>Exercício Aberto</value>
+    <value>Abra Exercício</value>
   </data>
   <data name="mIComparar" xml:space="preserve">
     <value>Comparar Resposta</value>
@@ -107,13 +107,13 @@
     <value>English</value>
   </data>
   <data name="mIEspañol" xml:space="preserve">
-    <value>Espanhol</value>
+    <value>Español</value>
   </data>
   <data name="mIdiomas" xml:space="preserve">
-    <value>LANGUAGES</value>
+    <value>IDIOMAS - LANGUAGES</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
-    <value>Portugues</value>
+    <value>Português</value>
   </data>
   <data name="label1" xml:space="preserve">
     <value>RESPOSTA</value>
@@ -125,6 +125,6 @@
     <value>SOLUÇÃO</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>1.- Candidatos Filtrados Resposta e Solução</value>
+    <value>1.- Candidatos Filtrados -  Resposta e Solução</value>
   </data>
 </root>

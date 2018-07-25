@@ -76,6 +76,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.EN-US.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.ES-VE.resx" />
+    <EmbeddedResource Include="RecursosLocalizables\StringResources.PT-PT.resx" />
     <EmbeddedResource Include="RecursosLocalizables\StringResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>StringResources.Designer.cs</LastGenOutput>

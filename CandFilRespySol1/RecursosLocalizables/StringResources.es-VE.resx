@@ -121,7 +121,7 @@
     <value>Español</value>
   </data>
   <data name="mIIngles" xml:space="preserve">
-    <value>Ingles</value>
+    <value>English</value>
   </data>
   <data name="mIAbrir" xml:space="preserve">
     <value>Abrir Ejercicio</value>
@@ -130,10 +130,10 @@
     <value>Comparar Respuesta</value>
   </data>
   <data name="mIdiomas" xml:space="preserve">
-    <value>IDIOMAS</value>
+    <value>IDIOMAS - LANGUAGES</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
-    <value>Portugues</value>
+    <value>Português</value>
   </data>
   <data name="label1" xml:space="preserve">
     <value>RESPUESTA</value>
@@ -145,6 +145,6 @@
     <value>SOLUCION</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>1.- Candidatos Filtrados Respuesta y Solución</value>
+    <value>1.- Candidatos Filtrados - Respuesta y Solución</value>
   </data>
 </root>

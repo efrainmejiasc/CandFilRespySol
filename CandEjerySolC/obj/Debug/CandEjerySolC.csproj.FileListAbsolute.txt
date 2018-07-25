@@ -8,3 +8,13 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySol\obj\Debug\CandEjerySolC.csproj.CoreCompileInputs.cache
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySol\obj\Debug\CandEjerySolC.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySol\obj\Debug\CandEjerySolC.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\bin\Debug\CandEjerySolC.exe.config
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\bin\Debug\CandEjerySolC.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\bin\Debug\CandEjerySolC.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.csprojResolveAssemblyReference.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CanEjerySol.Form1.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.Properties.Resources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.csproj.GenerateResource.Cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandEjerySolC\obj\Debug\CandEjerySolC.pdb

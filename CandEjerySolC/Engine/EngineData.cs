@@ -20,7 +20,7 @@ namespace CanEjerySol.Engine
             return valor;
         }
 
-        public static string Titulo = "Candidatos Ejercicio y Solución";
+        public static string Titulo = "C.- Candidatos Ejercicio y Solución";
         public const string Up = "Up";
         public const string Down = "Down";
         public const string Right = "Right";

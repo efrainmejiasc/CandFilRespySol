@@ -7,3 +7,13 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySol\obj\Debug\CandFilEjerySolA.csproj.CoreCompileInputs.cache
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySol\obj\Debug\CandFilEjerySolA.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySol\obj\Debug\CandFilEjerySolA.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\bin\Debug\CandFilEjerySolA.exe.config
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\bin\Debug\CandFilEjerySolA.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\bin\Debug\CandFilEjerySolA.pdb
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.csprojResolveAssemblyReference.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySol.Form1.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.Properties.Resources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.csproj.GenerateResource.Cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.csproj.CoreCompileInputs.cache
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.exe
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilEjerySolA\obj\Debug\CandFilEjerySolA.pdb

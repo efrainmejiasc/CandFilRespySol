@@ -18,3 +18,12 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.exe
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.pdb
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.RecursosLocalizables.StringResources.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.RecursosLocalizables.StringResources.EN-US.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.RecursosLocalizables.StringResources.ES-VE.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\CandOrdRespySol2.RecursosLocalizables.StringResources.PT-PT.resources
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\bin\Debug\EN-US\CandOrdRespySol2.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\bin\Debug\ES-VE\CandOrdRespySol2.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\bin\Debug\PT-PT\CandOrdRespySol2.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\EN-US\CandOrdRespySol2.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\ES-VE\CandOrdRespySol2.resources.dll
+C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandOrdRespySol2\obj\Debug\PT-PT\CandOrdRespySol2.resources.dll

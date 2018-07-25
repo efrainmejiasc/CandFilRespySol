@@ -127,13 +127,13 @@
     <value>English</value>
   </data>
   <data name="mIEspañol" xml:space="preserve">
-    <value>Spanish</value>
+    <value>Español</value>
   </data>
   <data name="mIdiomas" xml:space="preserve">
-    <value>LANGUAGES</value>
+    <value>IDIOMAS - LANGUAGES</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
-    <value>Portuguese</value>
+    <value>Português</value>
   </data>
   <data name="label1" xml:space="preserve">
     <value>ANSWER</value>
@@ -145,6 +145,6 @@
     <value>SOLUTION</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>1.- Candidates Filtered Response and Solution</value>
+    <value>1.- Filtered Candidates - Answer and Solution</value>
   </data>
 </root>

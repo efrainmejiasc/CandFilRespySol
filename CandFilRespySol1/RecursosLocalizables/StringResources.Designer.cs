@@ -97,7 +97,7 @@ namespace CandFilRespySol1.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a IDIOMAS - LANGUAJE.
+        ///   Busca una cadena traducida similar a IDIOMAS - LANGUAGES.
         /// </summary>
         internal static string mIdiomas {
             get {
@@ -124,7 +124,7 @@ namespace CandFilRespySol1.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Portugues.
+        ///   Busca una cadena traducida similar a Português.
         /// </summary>
         internal static string mIPortugues {
             get {
@@ -142,7 +142,7 @@ namespace CandFilRespySol1.RecursosLocalizables {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a 1.- Candidatos Filtrados Respuesta y Solución.
+        ///   Busca una cadena traducida similar a 1.- Candidatos Filtrados - Respuesta y Solución.
         /// </summary>
         internal static string thisText {
             get {

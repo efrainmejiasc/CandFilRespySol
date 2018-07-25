@@ -31,7 +31,7 @@ namespace CandRespySol.Engine
         public const string Comando = "open";
         public const string DescripcionPrograma = "CandRespySol File";
 
-        public const string Titulo = "Candidatos Respuesta y Solución";
+        public const string Titulo = "3.- Candidatos - Respuesta y Solución";
 
         public const string Español = "mIEspañol";
         public const string CulturaEspañol = "ES-VE";

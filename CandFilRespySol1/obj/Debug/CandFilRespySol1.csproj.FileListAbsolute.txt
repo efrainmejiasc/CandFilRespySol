@@ -22,8 +22,6 @@ C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandF
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\bin\Debug\ES-VE\CandFilRespySol1.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\bin\Debug\PT-PT\CandFilRespySol1.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\CandFilRespySol1.RecursosLocalizables.StringResources.resources
-C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\CandFilRespySol1.RecursosLocalizables.StringResorces.EN-US.resources
-C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\CandFilRespySol1.RecursosLocalizables.StringResouces.ES-VE.resources
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\CandFilRespySol1.RecursosLocalizables.StringResources.PT-PT.resources
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\EN-US\CandFilRespySol1.resources.dll
 C:\Users\EfrainMejiasC\Documents\Visual Studio 2017\Proyectos\SudokuMaster\CandFilRespySol\CandFilRespySol1\obj\Debug\ES-VE\CandFilRespySol1.resources.dll

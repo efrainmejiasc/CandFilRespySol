@@ -136,15 +136,15 @@
     <value>English</value>
   </data>
   <data name="mIPortugues" xml:space="preserve">
-    <value>Portugues</value>
+    <value>Português</value>
   </data>
   <data name="mRS" xml:space="preserve">
     <value>RESPUESTA Y SOLUCION</value>
   </data>
   <data name="thisText" xml:space="preserve">
-    <value>1.- Candidatos Filtrados Respuesta y Solución</value>
+    <value>1.- Candidatos Filtrados - Respuesta y Solución</value>
   </data>
   <data name="mIdiomas" xml:space="preserve">
-    <value>IDIOMAS - LANGUAJE</value>
+    <value>IDIOMAS - LANGUAGES</value>
   </data>
 </root>

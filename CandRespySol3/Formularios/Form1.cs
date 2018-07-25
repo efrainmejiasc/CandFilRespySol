@@ -49,7 +49,6 @@ namespace CandRespySol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DateTime.Now.Date > Convert.ToDateTime("13/08/2018", System.Globalization.CultureInfo.GetCultureInfo("es-ES"))) { Application.Exit(); }
             this.Text = Engine.EngineData.Titulo;
             if (!Funcion.ExisteClaveRegWin()) { Funcion.AgregarClaveRegWin(); }
             Funcion.AsociarExtension();
@@ -199,23 +198,23 @@ namespace CandRespySol
             this.MaximumSize = new Size(1161, 680);
             this.Size = new Size(1161, 680);
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
-           /* if (pathArchivo == string.Empty)
+            if (pathArchivo == string.Empty)
             {
-                this.Text = RecursosLocalizables.StringResources.thisText;
+                this.Text = CandRespySol3.RecursosLocalizables.StringResources.thisText;
             }
             else
             {
-                this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
+                this.Text = CandRespySol3.RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
             }
-            mIdiomas.Text = RecursosLocalizables.StringResources.mIdiomas;
-            mIEspañol.Text = RecursosLocalizables.StringResources.mIEspañol;
-            mIIngles.Text = RecursosLocalizables.StringResources.mIIngles;
-            mIPortugues.Text = RecursosLocalizables.StringResources.mIPortugues;
-            mRS.Text = RecursosLocalizables.StringResources.mRS;
-            mIAbrir.Text = RecursosLocalizables.StringResources.mIAbrir;
-            mIComparar.Text = RecursosLocalizables.StringResources.mIComparar;
-            label1.Text = RecursosLocalizables.StringResources.label1;
-            label2.Text = RecursosLocalizables.StringResources.label2;*/
+            mIdiomas.Text = CandRespySol3.RecursosLocalizables.StringResources.mIdiomas;
+            mIEspañol.Text = CandRespySol3.RecursosLocalizables.StringResources.mIEspañol;
+            mIIngles.Text = CandRespySol3.RecursosLocalizables.StringResources.mIIngles;
+            mIPortugues.Text = CandRespySol3.RecursosLocalizables.StringResources.mIPortugues;
+            mRS.Text = CandRespySol3.RecursosLocalizables.StringResources.mRS;
+            mIAbrir.Text = CandRespySol3.RecursosLocalizables.StringResources.mIAbrir;
+            mIComparar.Text = CandRespySol3.RecursosLocalizables.StringResources.mIComparar;
+            label1.Text = CandRespySol3.RecursosLocalizables.StringResources.label1;
+            label2.Text = CandRespySol3.RecursosLocalizables.StringResources.label2;
         }
 
         private void ColorMarcador_Click(object sender, EventArgs e)
@@ -257,7 +256,7 @@ namespace CandRespySol
                 return;
             }
             AbrirJuego(pathArchivo);
-            //this.Text = RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
+            this.Text = CandRespySol3.RecursosLocalizables.StringResources.thisText + " : " + Funcion.NombreJuego(pathArchivo);
         }
 
         private void AbrirJuego(string pathArchivo)
